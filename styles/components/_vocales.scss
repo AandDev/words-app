@@ -4,55 +4,62 @@
     flex-direction: column;
     position: relative;
     .title {
-        width: 100%;
+        width: 100vw;
         padding: 20px;
         background-color: $blue;
         text-align: center;
         font-size: 2rem;
     }
     .words-options {
+        width: 80%;
+        margin: 0 auto;
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
         .word-item {
-            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
             text-align: center;
             margin-top: 5rem;
-            padding: 30px 0;
             font-size: 2rem;
-            transition: all 0.7s ease;
+            transition: all 0.3s ease;
             &:nth-child(1) {
                 background-color: $yellow;
                 &:hover {
-                    flex: 2;
+                    transform: scale(1.05);
                 }
             }
             &:nth-child(2) {
                 background-color: $green;
                 &:hover {
-                    flex: 2;
+                    transform: scale(1.05);
                 }
             }
             &:nth-child(3) {
                 background-color: $blue;
                 &:hover {
-                    flex: 2;
+                    transform: scale(1.05);
                 }
             }
             &:nth-child(4) {
                 background-color: $violet;
                 &:hover {
-                    flex: 2;
+                    transform: scale(1.05);
                 }
             }
             &:nth-child(5) {
                 background-color: $red;
                 &:hover {
-                    flex: 2;
+                    transform: scale(1.05);
                 }
             }
             .word-btn {
-                padding: 10px 50px;
+                padding: 10px;
                 border: none;
                 background: none;
                 cursor: pointer;
@@ -67,11 +74,18 @@
     }
     .examples {
         display: flex;
-        widows: 70%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
         margin: 0 auto;
         margin-top: 3rem;
         .exp-item {
-            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            //width: 33%;
             opacity: 0.7;
             transition: all 0.3s ease;
             &:nth-child(1) {
@@ -93,7 +107,7 @@
                 }
             }
             .exp-btn {
-                padding: 10px 50px;
+                padding: 15px 35px;
                 border: none;
                 background: none;
                 cursor: pointer;

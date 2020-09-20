@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+button {
+  outline: none;
+}
+
 .home {
   width: 100vw;
   height: 100vh;
@@ -71,7 +75,7 @@
 }
 
 .content .title {
-  width: 100%;
+  width: 100vw;
   padding: 20px;
   background-color: #2EADF4;
   text-align: center;
@@ -79,6 +83,22 @@
 }
 
 .content .words-options {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .words-options .word-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,18 +108,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.content .words-options .word-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   text-align: center;
   margin-top: 5rem;
-  padding: 30px 0;
   font-size: 2rem;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .content .words-options .word-item:nth-child(1) {
@@ -107,9 +123,8 @@
 }
 
 .content .words-options .word-item:nth-child(1):hover {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .content .words-options .word-item:nth-child(2) {
@@ -117,9 +132,8 @@
 }
 
 .content .words-options .word-item:nth-child(2):hover {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .content .words-options .word-item:nth-child(3) {
@@ -127,9 +141,8 @@
 }
 
 .content .words-options .word-item:nth-child(3):hover {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .content .words-options .word-item:nth-child(4) {
@@ -137,9 +150,8 @@
 }
 
 .content .words-options .word-item:nth-child(4):hover {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .content .words-options .word-item:nth-child(5) {
@@ -147,13 +159,12 @@
 }
 
 .content .words-options .word-item:nth-child(5):hover {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .content .words-options .word-item .word-btn {
-  padding: 10px 50px;
+  padding: 10px;
   border: none;
   background: none;
   cursor: pointer;
@@ -170,15 +181,30 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  widows: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
   margin: 0 auto;
   margin-top: 3rem;
 }
 
 .content .examples .exp-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
   opacity: 0.7;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -203,7 +229,7 @@
 }
 
 .content .examples .exp-item .exp-btn {
-  padding: 10px 50px;
+  padding: 15px 35px;
   border: none;
   background: none;
   cursor: pointer;
@@ -223,7 +249,7 @@
 }
 
 .consonantes .title {
-  width: 100%;
+  width: 100vw;
   padding: 20px;
   background-color: #2bdd52;
   text-align: center;
@@ -231,6 +257,22 @@
 }
 
 .consonantes .words-options {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.consonantes .words-options .word-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,18 +282,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.consonantes .words-options .word-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   text-align: center;
   margin-top: 5rem;
-  padding: 30px 0;
   font-size: 2rem;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .consonantes .words-options .word-item:nth-child(1) {
@@ -259,9 +297,8 @@
 }
 
 .consonantes .words-options .word-item:nth-child(1):hover {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .consonantes .words-options .word-item:nth-child(2) {
@@ -269,9 +306,8 @@
 }
 
 .consonantes .words-options .word-item:nth-child(2):hover {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .consonantes .words-options .word-item:nth-child(3) {
@@ -279,9 +315,8 @@
 }
 
 .consonantes .words-options .word-item:nth-child(3):hover {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .consonantes .words-options .word-item:nth-child(4) {
@@ -289,9 +324,8 @@
 }
 
 .consonantes .words-options .word-item:nth-child(4):hover {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .consonantes .words-options .word-item:nth-child(5) {
@@ -299,13 +333,12 @@
 }
 
 .consonantes .words-options .word-item:nth-child(5):hover {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .consonantes .words-options .word-item .word-btn {
-  padding: 10px 50px;
+  padding: 10px;
   border: none;
   background: none;
   cursor: pointer;

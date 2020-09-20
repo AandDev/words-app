@@ -25,6 +25,10 @@ $general: 'Patrick Hand', cursive;
     text-decoration: none;
 }
 
+button {
+    outline: none;
+}
+
 @import './components/home';
 @import './components/vocales';
 @import './components/consonantes';
