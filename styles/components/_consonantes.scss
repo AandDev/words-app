@@ -8,11 +8,11 @@
         padding: 20px;
         background-color: $green;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .words-options {
-        width: 80%;
-        margin: 0 auto;
+        width: 90%;
+        margin: 3rem auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -25,7 +25,7 @@
             height: 100px;
             border-radius: 50%;
             text-align: center;
-            margin-top: 5rem;
+            margin-top: 1rem;
             font-size: 2rem;
             transition: all 0.3s ease;
             &:nth-child(1) {

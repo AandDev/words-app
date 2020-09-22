@@ -15,22 +15,31 @@ button {
 .home {
   width: 100vw;
   height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.home .title h1 {
+  color: #202020;
+  font-size: 3rem;
+}
+
 .home .vocales-box, .home .consonates-box {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 100%;
+  width: 70%;
+  height: 200px;
+  border-radius: 20px;
   background-color: #2EADF4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,19 +52,21 @@ button {
           align-items: center;
   color: #f9f9f9;
   font-size: 2rem;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .home .vocales-box:hover, .home .consonates-box:hover {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  font-size: 3rem;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.home .vocales-box h1, .home .consonates-box h1 {
+.home .vocales-box h2, .home .consonates-box h2 {
   cursor: pointer;
+}
+
+.home .vocales-box h2 a, .home .consonates-box h2 a {
+  padding: 20px;
 }
 
 .home .consonates-box {
@@ -79,12 +90,12 @@ button {
   padding: 20px;
   background-color: #2EADF4;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .content .words-options {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 3rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +123,7 @@ button {
   height: 100px;
   border-radius: 50%;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 1rem;
   font-size: 2rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -190,8 +201,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
-  margin: 0 auto;
-  margin-top: 3rem;
+  margin: 2rem auto;
 }
 
 .content .examples .exp-item {
@@ -253,12 +263,12 @@ button {
   padding: 20px;
   background-color: #2bdd52;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .consonantes .words-options {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 3rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +296,7 @@ button {
   height: 100px;
   border-radius: 50%;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 1rem;
   font-size: 2rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
