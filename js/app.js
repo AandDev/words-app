@@ -5,13 +5,20 @@ const vocalesSample = [
     ['Avión', 'Aire', 'Agua'],
     ['Empanada', 'Estrella', 'Elefante'],
     ['Iglesia', 'Internet', 'Imagen'],
-    ['Opera', 'Oceano', 'Oreja'],
+    ['Ópera', 'Ocaso', 'Oreja'],
     ['Uno', 'Uva', 'Uña']
+];
+const vocalesSounds = [
+    ['avion', 'aire', 'agua'],
+    ['empanada', 'estrella', 'elefante'],
+    ['iglesia', 'internet', 'imagen'],
+    ['opera', 'ocaso', 'oreja'],
+    ['uno', 'uva', 'una']
 ];
 const colors = ['#FFD600', '#2bdd52', '#2EADF4', '#CD2EF4', '#F42E2E'];
 
 
-function createExamples(item, color, sound) {
+function createExamples(item, color, sound, word) {
     
     const examplesBox = document.createElement('div');
     const newWords = `
@@ -19,22 +26,21 @@ function createExamples(item, color, sound) {
         <button class="exp-btn" id="exp-btn">
             ${item[0]}
         </button>
-        <audio class="sound-2" src="../sounds/owl.mp3"></audio>
+        <audio class="sound-2" src="../sounds/words-sounds/${word[0]}.mp3"></audio>
     </div>
     <div class="exp-item" style="background-color: ${color}">
         <button class="exp-btn">
             ${item[1]}
         </button>
-        <audio class="sound-2" src="../sounds/pig.mp3"></audio>
+        <audio class="sound-2" src="../sounds/words-sounds/${word[1]}.mp3"></audio>
     </div>
     <div class="exp-item" style="background-color: ${color}">
         <button class="exp-btn">
             ${item[2]}
         </button>
-        <audio class="sound-2" src="../sounds/elephant.mp3"></audio>
+        <audio class="sound-2" src="../sounds/words-sounds/${word[2]}.mp3"></audio>
     </div>
     `;
-    console.log(color);
     examplesBox.classList.add('examples');
     examplesBox.innerHTML = newWords;
 
@@ -52,7 +58,7 @@ function createExamples(item, color, sound) {
     
 }
 
-wordsBtn.forEach((btn, index) => btn.addEventListener('click', () => createExamples(vocalesSample[index], colors[index], sounds[index])));
+wordsBtn.forEach((btn, index) => btn.addEventListener('click', () => createExamples(vocalesSample[index], colors[index], sounds[index], vocalesSounds[index])));
 
 // ---------- Sonidos de palabras ---------- //
 
