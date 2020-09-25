@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/css/styles.css">
-    <title>Vocales</title>
+    <title>Consonantes</title>
 </head>
 <body>
     <main class="consonantes content">
@@ -12,40 +12,82 @@
             <h1>Consonantes</h1>
         </div>
         <div class="words-options">
-            <div class="word-item">
-                <button class="word-btn">
-                    M
-                </button>
-                <audio class="sound" src="../sounds/alphabet-m.mp3"></audio>
-            </div>
-            <div class="word-item">
-                <button class="word-btn">
-                    P
-                </button>
-                <audio class="sound" src="../sounds/alphabet-p.mp3"></audio>
-            </div>
-            <div class="word-item">
-                <button class="word-btn">
-                    L
-                </button>
-                <audio class="sound" src="../sounds/alphabet-l.mp3"></audio>
-            </div>
-            <div class="word-item">
-                <button class="word-btn">
-                    T
-                </button>
-                <audio class="sound" src="../sounds/alphabet-t.mp3"></audio>
-            </div>
-            <div class="word-item">
-                <button class="word-btn">
-                    S
-                </button>
-                <audio class="sound" src="../sounds/alphabet-s.mp3"></audio>
+            <!--  Group 1 [M,P,L,T,S]  -->
+            <div class="consonantes-options">
+                <div class="words-slide current">
+                    <div class="word-item">
+                        <button class="word-btn active-btn">
+                            M
+                        </button>
+                        <audio class="sound" src="../sounds/alphabet-m.mp3"></audio>
+                    </div>
+                    <div class="word-item">
+                        <button class="word-btn active-btn">
+                            P
+                        </button>
+                        <audio class="sound" src="../sounds/alphabet-p.mp3"></audio>
+                    </div>
+                    <div class="word-item">
+                        <button class="word-btn active-btn">
+                            L
+                        </button>
+                        <audio class="sound" src="../sounds/alphabet-l.mp3"></audio>
+                    </div>
+                    <div class="word-item">
+                        <button class="word-btn active-btn">
+                            T
+                        </button>
+                        <audio class="sound" src="../sounds/alphabet-t.mp3"></audio>
+                    </div>
+                    <div class="word-item">
+                        <button class="word-btn active-btn">
+                            S
+                        </button>
+                        <audio class="sound" src="../sounds/alphabet-s.mp3"></audio>
+                    </div>
+                </div>
+                <!--  Group 2 [N,D,C,Q,B]  -->
+                <div class="words-slide">
+                    <div class="word-item">
+                        <button class="word-btn2">
+                            N
+                        </button>
+                        <audio class="sound2" src="../sounds/alphabet-n.mp3"></audio>
+                    </div>
+                    <div class="word-item">
+                        <button class="word-btn2">
+                            D
+                        </button>
+                        <audio class="sound2" src="../sounds/alphabet-d.mp3"></audio>
+                    </div>
+                    <div class="word-item">
+                        <button class="word-btn2">
+                            C
+                        </button>
+                        <audio class="sound2" src="../sounds/alphabet-c.mp3"></audio>
+                    </div>
+                    <div class="word-item">
+                        <button class="word-btn2">
+                            Q
+                        </button>
+                        <audio class="sound2" src="../sounds/alphabet-q.mp3"></audio>
+                    </div>
+                    <div class="word-item">
+                        <button class="word-btn2">
+                            B
+                        </button>
+                        <audio class="sound2" src="../sounds/alphabet-b.mp3"></audio>
+                    </div>
+                </div>
             </div>
         </div>
         <a class="back" href="../index.html">Volver</a>
+        <button id="next" class="btn">&raquo;</button>
+        <button id="prev" class="btn">&laquo;</button>
     </main>
 
     <script type="module" src="../js/consonantes.js"></script>
 </body>
 </html>
+
+<!--  [N,D,C,Q,B] [V,R,RR,F,J] [Ñ,CH,LL,Y,Z] [H,K,X]  -->

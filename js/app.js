@@ -1,20 +1,8 @@
+import {vocalesSample, vocalesSounds} from './sampleWords.js'
+
 const wordsBtn = document.querySelectorAll('.word-btn');
 const sounds = document.querySelectorAll('.sound');
 
-const vocalesSample = [
-    ['Avión', 'Aire', 'Agua'],
-    ['Empanada', 'Estrella', 'Elefante'],
-    ['Iglesia', 'Internet', 'Imagen'],
-    ['Ópera', 'Ocaso', 'Oreja'],
-    ['Uno', 'Uva', 'Uña']
-];
-const vocalesSounds = [
-    ['avion', 'aire', 'agua'],
-    ['empanada', 'estrella', 'elefante'],
-    ['iglesia', 'internet', 'imagen'],
-    ['opera', 'ocaso', 'oreja'],
-    ['uno', 'uva', 'una']
-];
 const colors = ['#FFD600', '#2bdd52', '#2EADF4', '#CD2EF4', '#F42E2E'];
 
 
@@ -39,6 +27,18 @@ function createExamples(item, color, sound, word) {
             ${item[2]}
         </button>
         <audio class="sound-2" src="../sounds/words-sounds/${word[2]}.mp3"></audio>
+    </div>
+    <div class="exp-item" style="background-color: ${color}">
+        <button class="exp-btn">
+            ${item[3]}
+        </button>
+        <audio class="sound-2" src="../sounds/words-sounds/${word[3]}.mp3"></audio>
+    </div>
+    <div class="exp-item" style="background-color: ${color}">
+        <button class="exp-btn">
+            ${item[4]}
+        </button>
+        <audio class="sound-2" src="../sounds/words-sounds/${word[4]}.mp3"></audio>
     </div>
     `;
     examplesBox.classList.add('examples');
@@ -73,6 +73,26 @@ document.addEventListener('click',(e) => {
 });
 
 export {createExamples, colors, sounds};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
