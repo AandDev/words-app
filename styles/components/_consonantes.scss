@@ -94,23 +94,27 @@
     }
     .btn {
         position: absolute;
-        top: 50%;
+        top: 65%;
         border: none;
         background: none;
-        font-size: 25px;
+        font-size: 35px;
         font-weight: bold;
         cursor: pointer;
         outline: none;
-        color: $green;
-        transition: all 0.3s ease;
+        i {
+            color: $green;
+            transition: all 0.3s ease;
+        }
         &:hover{
-            transform: scale(1.1);
+            i {
+                transform: scale(1.2);
+            }
         }
     }
     #prev {
-        left: 20px;
+        left: 15px;
     }
     #next {
-        right: 20px;
+        right: 15px;
     }
 }
