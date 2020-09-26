@@ -69,15 +69,18 @@
             }
         }
     }
-    .back {
+    .up-btn {
         position: absolute;
         top: 10px;
-        left: 5%;
         font-weight: bold;
         font-size: 20px;
+        padding: 5px 10px;
+    }
+    .back {
+        left: 10px;
     }
     .go-to {
-        left: 85%;
+        right: 10px;
     }
     .examples {
         display: flex;

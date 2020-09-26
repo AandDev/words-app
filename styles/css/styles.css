@@ -184,16 +184,20 @@ button {
   font-size: 3rem;
 }
 
-.content .back {
+.content .up-btn {
   position: absolute;
   top: 10px;
-  left: 5%;
   font-weight: bold;
   font-size: 20px;
+  padding: 5px 10px;
+}
+
+.content .back {
+  left: 10px;
 }
 
 .content .go-to {
-  left: 85%;
+  right: 10px;
 }
 
 .content .examples {
@@ -386,12 +390,6 @@ button {
   background: none;
   cursor: pointer;
   font-size: 3rem;
-}
-
-.consonantes .back {
-  position: absolute;
-  top: 10px;
-  right: 10px;
 }
 
 .consonantes .btn {
