@@ -176,7 +176,7 @@ button {
           transform: scale(1.05);
 }
 
-.content .words-options .word-item .word-btn, .content .words-options .word-item .word-btn2 {
+.content .words-options .word-item .word-btn, .content .words-options .word-item .word-btn3, .content .words-options .word-item .word-btn2, .content .words-options .word-item .word-btn4, .content .words-options .word-item .word-btn5 {
   padding: 10px;
   border: none;
   background: none;

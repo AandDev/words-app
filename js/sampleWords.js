@@ -1,22 +1,22 @@
 //  ----------  Vocales  ----------  //
 
 const vocalesSample = [
-    ['Avión', 'Aire', 'Agua', 'Ajo', 'Ala'],
-    ['Empanada', 'Estrella', 'Elefante', 'Eco', 'Edad'],
-    ['Iglesia', 'Internet', 'Imagen', 'Idea', 'Igual'],
-    ['Ojo', 'Oso', 'Oreja', 'Oro', 'Obra'],
-    ['Uno', 'Uva', 'Uña', 'Usar', 'Ubre']
+    ['Aire', 'Agua', 'Ajo', 'Ala', '*'],
+    ['Empanada', 'Estrella', 'Elefante', 'Eco', '*'],
+    ['Iglesia', 'Internet', 'Imagen', 'Idea', '*'],
+    ['Ojo', 'Oso', 'Oreja', 'Oro', '*'],
+    ['Uno', 'Uva', 'Uña', 'Usar', '*']
 ];
 
 const vocalesSounds = [
-    ['avion', 'aire', 'agua', 'ajo', 'ala'],
+    ['aire', 'agua', 'ajo', 'ala', 'avion'],
     ['empanada', 'estrella', 'elefante', 'eco', 'edad'],
     ['iglesia', 'internet', 'imagen', 'idea', 'igual'],
     ['ojo', 'oso', 'oreja', 'oro', 'obra'],
     ['uno', 'uva', 'una', 'usar', 'ubre']
 ];
 
-//  ----------  Consonantes 1  ----------  //
+//  ----------  Grupo 1 [M,P,L,T,S]  ----------  //
 
 const consonantesSample = [
     ['ma', 'me', 'mi', 'mo', 'mu'],
@@ -34,7 +34,7 @@ const consonantesSounds1 = [
     ['sabado', 'suelo', 'sanar', 'sanar', 'sanar']
 ];
 
-//  ----------  Consonantes 2  ----------  //
+//  ----------  Grupo 2 [N,D,C,Q,B]  ----------  //
 
 const consonantesSample2 = [
     ['na', 'ne', 'ni', 'no', 'nu'],
@@ -44,6 +44,33 @@ const consonantesSample2 = [
     ['ba', 'be', 'bi', 'bo', 'bu']
 ];
 
+//  ----------  Grupo 3 [V,R,RR,F,J]  ----------  //
+
+const consonantesSample3 = [
+    ['va', 've', 'vi', 'vo', 'vu'],
+    ['ra', 're', 'ri', 'ro', 'ru'],
+    ['rra', 'rre', 'rri', 'rro', 'rru'],
+    ['fa', 'fe', 'fi', 'fo', 'fu'],
+    ['ja', 'je', 'ji', 'jo', 'ju']
+];
+
+//  ----------  Grupo 4 [Ñ,CH,LL,Y,Z]  ----------  //
+
+const consonantesSample4 = [
+    ['ña', 'ñe', 'ñi', 'ño', 'ñu'],
+    ['cha', 'che', 'chi', 'cho', 'chu'],
+    ['lla', 'lle', 'lli', 'llo', 'llu'],
+    ['ya', 'ye', 'yi', 'yo', 'yu'],
+    ['za', 'ze', 'zi', 'zo', 'zu']
+];
+
+//  ----------  Grupo 5 [H,K,X]  ----------  //
+
+const consonantesSample5 = [
+    ['ha', 'he', 'hi', 'ho', 'hu'],
+    ['ka', 'ke', 'ki', 'ko', 'ku'],
+    ['xa', 'xe', 'xi', 'xo', 'xu']
+];
 
 
-export {vocalesSample, vocalesSounds, consonantesSample, consonantesSounds1, consonantesSample2};
+export {vocalesSample, vocalesSounds, consonantesSample, consonantesSounds1, consonantesSample2, consonantesSample3, consonantesSample4, consonantesSample5};
