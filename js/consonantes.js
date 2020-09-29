@@ -6,7 +6,7 @@ import {consonantesSample, consonantesSample2, consonantesSample3, consonantesSa
 
 const wordsBtn = document.querySelectorAll('.word-btn');
 
-wordsBtn.forEach((btn, index) => btn.addEventListener('click', () => createExamples(consonantesSample[index], colors[index], sounds[index], consonantesSounds1[index])));
+wordsBtn.forEach((btn, index) => btn.addEventListener('click', () => createExamples(consonantesSample[index], colors[index], sounds[index], consonantesSample[index])));
 
 
 
