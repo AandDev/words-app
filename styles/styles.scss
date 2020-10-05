@@ -3,12 +3,36 @@
 
 // ----- Colores ----- //
 
-$blue: #2EADF4;
-$green: #2bdd52;
+$dark: #202020;
+$yellow-2:#FFA60D; // ['#FFA60D', '#E8AD0C', '#FFD600', '#E8DA0C', '#E2FF0D']
+$yellow-1: #E8AD0C;
 $yellow: #FFD600;
+$yellow1: #E8DA0C;
+$yellow2: #E2FF0D;
+$green-2: #84FF26; // ['#84FF26', '#33E823', '#2BDD52', '#23E885', '#26FFD0']
+$green-1: #33E823;
+$green: #2BDD52; // #33FF60 antes
+$green1:#23E885;
+$green2: #26FFD0;
+$blue-2: #23EDFA; // ['#23EDFA', '#1FCADE', '#2EADF4', '#1F6BDE', '#2723FA']
+$blue-1:#1FCADE;
+$blue: #2EADF4;
+$blue1:#1F6BDE;
+$blue2:#2723FA;
+$violet-2: #6823FA; // ['#6823FA', '#841FDE', '#CD2EF4', '#DE1FC4', '#FA2372']
+$violet-1: #841FDE;
 $violet: #CD2EF4;
+$violet1: #DE1FC4;
+$violet2:#FA2372;
+$red-1: #DE1F4D; // ['#DE1F4D', '#F42E2E', '#FA6223']
 $red: #F42E2E;
+$red1: #FA6223;
 $text: #f9f9f9;
+
+// ----- Otros ----- //
+
+$shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+$ease: 0.3s ease;
 
 // ----- Fuentes ----- //
 

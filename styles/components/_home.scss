@@ -17,15 +17,19 @@
         width: 70%;
         height: 200px;
         border-radius: 20px;
-        background-color: $blue;
+        //background-color: $blue;
+        background-image: url(../../img/bg-vocales.png);
+        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
         color: $text;
         font-size: 2rem;
+        box-shadow: $shadow;
         transition: all 0.5s ease;
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.03) translateY(-5px);
+            
         }
         h2 {
             //font-size: 3rem;
@@ -36,6 +40,7 @@
         }
     }
     .consonates-box {
-        background-color: $green;
+        //background-color: $green;
+        background-image: url(../../img/bg-consonantes.png);
     }
 }

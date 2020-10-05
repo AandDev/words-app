@@ -40,7 +40,8 @@ button {
   width: 70%;
   height: 200px;
   border-radius: 20px;
-  background-color: #2EADF4;
+  background-image: url(../../img/bg-vocales.png);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,13 +53,15 @@ button {
           align-items: center;
   color: #f9f9f9;
   font-size: 2rem;
+  -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .home .vocales-box:hover, .home .consonates-box:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.03) translateY(-5px);
+          transform: scale(1.03) translateY(-5px);
 }
 
 .home .vocales-box h2, .home .consonates-box h2 {
@@ -70,7 +73,7 @@ button {
 }
 
 .home .consonates-box {
-  background-color: #2bdd52;
+  background-image: url(../../img/bg-consonantes.png);
 }
 
 .content {
@@ -87,11 +90,16 @@ button {
 }
 
 .content .title {
-  width: 100vw;
+  width: 95vw;
+  margin: 10px auto;
   padding: 20px;
-  background-color: #2EADF4;
+  background-image: url(../../img/bg-vocales.png);
+  background-size: cover;
+  border-radius: 20px;
   text-align: center;
   font-size: 1.5rem;
+  -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
 .content .words-options {
@@ -121,14 +129,15 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  text-align: center;
   margin-top: 1rem;
   font-size: 2rem;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .content .words-options .word-item:nth-child(1) {
@@ -136,17 +145,17 @@ button {
 }
 
 .content .words-options .word-item:nth-child(1):hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .content .words-options .word-item:nth-child(2) {
-  background-color: #2bdd52;
+  background-color: #2BDD52;
 }
 
 .content .words-options .word-item:nth-child(2):hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .content .words-options .word-item:nth-child(3) {
@@ -154,8 +163,8 @@ button {
 }
 
 .content .words-options .word-item:nth-child(3):hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .content .words-options .word-item:nth-child(4) {
@@ -163,8 +172,8 @@ button {
 }
 
 .content .words-options .word-item:nth-child(4):hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .content .words-options .word-item:nth-child(5) {
@@ -172,8 +181,8 @@ button {
 }
 
 .content .words-options .word-item:nth-child(5):hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .content .words-options .word-item .word-btn, .content .words-options .word-item .word-btn3, .content .words-options .word-item .word-btn2, .content .words-options .word-item .word-btn4, .content .words-options .word-item .word-btn5 {
@@ -190,14 +199,21 @@ button {
   font-weight: bold;
   font-size: 20px;
   padding: 5px 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.content .up-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .content .back {
-  left: 10px;
+  left: 5%;
 }
 
 .content .go-to {
-  right: 10px;
+  right: 5%;
 }
 
 .content .examples {
@@ -228,38 +244,40 @@ button {
           align-items: center;
   border-radius: 15px;
   opacity: 0.7;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .content .examples .exp-item:nth-child(1):hover {
   opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.1) translateY(-5px);
+          transform: scale(1.1) translateY(-5px);
 }
 
 .content .examples .exp-item:nth-child(2):hover {
   opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.1) translateY(-5px);
+          transform: scale(1.1) translateY(-5px);
 }
 
 .content .examples .exp-item:nth-child(3):hover {
   opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.1) translateY(-5px);
+          transform: scale(1.1) translateY(-5px);
 }
 
 .content .examples .exp-item:nth-child(4):hover {
   opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.1) translateY(-5px);
+          transform: scale(1.1) translateY(-5px);
 }
 
 .content .examples .exp-item:nth-child(5):hover {
   opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.1) translateY(-5px);
+          transform: scale(1.1) translateY(-5px);
 }
 
 .content .examples .exp-item .exp-btn {
@@ -284,11 +302,7 @@ button {
 }
 
 .consonantes .title {
-  width: 100vw;
-  padding: 20px;
-  background-color: #2bdd52;
-  text-align: center;
-  font-size: 1.5rem;
+  background-image: url(../../img/bg-consonantes.png);
 }
 
 .consonantes .words-options {
@@ -329,14 +343,11 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
-  text-align: center;
   margin-top: 1rem;
   font-size: 2rem;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .consonantes .words-options .consonantes-options .words-slide .word-item:nth-child(1) {
@@ -344,17 +355,17 @@ button {
 }
 
 .consonantes .words-options .consonantes-options .words-slide .word-item:nth-child(1):hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .consonantes .words-options .consonantes-options .words-slide .word-item:nth-child(2) {
-  background-color: #2bdd52;
+  background-color: #2BDD52;
 }
 
 .consonantes .words-options .consonantes-options .words-slide .word-item:nth-child(2):hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .consonantes .words-options .consonantes-options .words-slide .word-item:nth-child(3) {
@@ -362,8 +373,8 @@ button {
 }
 
 .consonantes .words-options .consonantes-options .words-slide .word-item:nth-child(3):hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .consonantes .words-options .consonantes-options .words-slide .word-item:nth-child(4) {
@@ -371,8 +382,8 @@ button {
 }
 
 .consonantes .words-options .consonantes-options .words-slide .word-item:nth-child(4):hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .consonantes .words-options .consonantes-options .words-slide .word-item:nth-child(5) {
@@ -380,8 +391,8 @@ button {
 }
 
 .consonantes .words-options .consonantes-options .words-slide .word-item:nth-child(5):hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .consonantes .words-options .consonantes-options .words-slide .word-item .word-btn {
@@ -390,6 +401,98 @@ button {
   background: none;
   cursor: pointer;
   font-size: 3rem;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item1:nth-child(1) {
+  background-color: #FFA60D;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item1:nth-child(2) {
+  background-color: #E8AD0C;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item1:nth-child(3) {
+  background-color: #FFD600;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item1:nth-child(4) {
+  background-color: #E8DA0C;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item1:nth-child(5) {
+  background-color: #E2FF0D;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item2:nth-child(1) {
+  background-color: #84FF26;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item2:nth-child(2) {
+  background-color: #33E823;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item2:nth-child(3) {
+  background-color: #2BDD52;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item2:nth-child(4) {
+  background-color: #23E885;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item2:nth-child(5) {
+  background-color: #26FFD0;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item3:nth-child(1) {
+  background-color: #23EDFA;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item3:nth-child(2) {
+  background-color: #1FCADE;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item3:nth-child(3) {
+  background-color: #2EADF4;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item3:nth-child(4) {
+  background-color: #1F6BDE;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item3:nth-child(5) {
+  background-color: #2723FA;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item4:nth-child(1) {
+  background-color: #6823FA;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item4:nth-child(2) {
+  background-color: #841FDE;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item4:nth-child(3) {
+  background-color: #CD2EF4;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item4:nth-child(4) {
+  background-color: #DE1FC4;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item4:nth-child(5) {
+  background-color: #FA2372;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item5:nth-child(1) {
+  background-color: #DE1F4D;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item5:nth-child(2) {
+  background-color: #F42E2E;
+}
+
+.consonantes .words-options .consonantes-options .words-slide .word-item5:nth-child(3) {
+  background-color: #FA6223;
 }
 
 .consonantes .btn {
@@ -404,9 +507,9 @@ button {
 }
 
 .consonantes .btn i {
-  color: #2bdd52;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  color: #2BDD52;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .consonantes .btn:hover i {

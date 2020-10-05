@@ -5,11 +5,16 @@
     flex-direction: column;
     position: relative;
     .title {
-        width: 100vw;
+        width: 95vw;
+        margin: 10px auto;
         padding: 20px;
-        background-color: $blue;
+        //background-color: $blue;
+        background-image: url(../../img/bg-vocales.png);
+        background-size: cover;
+        border-radius: 20px;
         text-align: center;
         font-size: 1.5rem;
+        box-shadow: $shadow;
     }
     .words-options {
         width: 90%;
@@ -23,41 +28,42 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            text-align: center;
+            //text-align: center;
             margin-top: 1rem;
             font-size: 2rem;
-            transition: all 0.3s ease;
+            box-shadow: $shadow;
+            transition: $ease;
             &:nth-child(1) {
                 background-color: $yellow;
                 &:hover {
-                    transform: scale(1.05);
+                    transform: translateY(-5px);
                 }
             }
             &:nth-child(2) {
                 background-color: $green;
                 &:hover {
-                    transform: scale(1.05);
+                    transform: translateY(-5px);
                 }
             }
             &:nth-child(3) {
                 background-color: $blue;
                 &:hover {
-                    transform: scale(1.05);
+                    transform: translateY(-5px);
                 }
             }
             &:nth-child(4) {
                 background-color: $violet;
                 &:hover {
-                    transform: scale(1.05);
+                    transform: translateY(-5px);
                 }
             }
             &:nth-child(5) {
                 background-color: $red;
                 &:hover {
-                    transform: scale(1.05);
+                    transform: translateY(-5px);
                 }
             }
             .word-btn, .word-btn3, .word-btn2, .word-btn4, .word-btn5 {
@@ -75,12 +81,16 @@
         font-weight: bold;
         font-size: 20px;
         padding: 5px 10px;
+        transition: $ease;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
     .back {
-        left: 10px;
+        left: 5%;
     }
     .go-to {
-        right: 10px;
+        right: 5%;
     }
     .examples {
         display: flex;
@@ -97,35 +107,36 @@
             border-radius: 15px;
             //width: 33%;
             opacity: 0.7;
-            transition: all 0.3s ease;
+            box-shadow: $shadow;
+            transition: $ease;
             &:nth-child(1) {
                 &:hover {
                     opacity: 1;
-                    transform: scale(1.1);
+                    transform: scale(1.1) translateY(-5px);
                 }
             }
             &:nth-child(2) {
                 &:hover {
                     opacity: 1;
-                    transform: scale(1.1);
+                    transform: scale(1.1) translateY(-5px);
                 }
             }
             &:nth-child(3) {
                 &:hover {
                     opacity: 1;
-                    transform: scale(1.1);
+                    transform: scale(1.1) translateY(-5px);
                 }
             }
             &:nth-child(4) {
                 &:hover {
                     opacity: 1;
-                    transform: scale(1.1);
+                    transform: scale(1.1) translateY(-5px);
                 }
             }
             &:nth-child(5) {
                 &:hover {
                     opacity: 1;
-                    transform: scale(1.1);
+                    transform: scale(1.1) translateY(-5px);
                 }
             }
             .exp-btn {

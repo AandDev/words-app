@@ -5,11 +5,12 @@
     flex-direction: column;
     position: relative;
     .title {
-        width: 100vw;
-        padding: 20px;
-        background-color: $green;
-        text-align: center;
-        font-size: 1.5rem;
+        //width: 100vw;
+        //padding: 20px;
+        //background-color: $green;
+        background-image: url(../../img/bg-consonantes.png);
+        //text-align: center;
+        //font-size: 1.5rem;
     }
     .words-options {
         //width: 80%;
@@ -32,41 +33,41 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 100px;
-                    height: 100px;
+                    //width: 100px;
+                    //height: 100px;
                     border-radius: 50%;
-                    text-align: center;
+                    //text-align: center;
                     margin-top: 1rem;
                     font-size: 2rem;
-                    transition: all 0.3s ease;
+                    transition: $ease;
                     &:nth-child(1) {
                         background-color: $yellow;
                         &:hover {
-                            transform: scale(1.05);
+                            transform: translateY(-5px);
                         }
                     }
                     &:nth-child(2) {
                         background-color: $green;
                         &:hover {
-                            transform: scale(1.05);
+                            transform: translateY(-5px);
                         }
                     }
                     &:nth-child(3) {
                         background-color: $blue;
                         &:hover {
-                            transform: scale(1.05);
+                            transform: translateY(-5px);
                         }
                     }
                     &:nth-child(4) {
                         background-color: $violet;
                         &:hover {
-                            transform: scale(1.05);
+                            transform: translateY(-5px);
                         }
                     }
                     &:nth-child(5) {
                         background-color: $red;
                         &:hover {
-                            transform: scale(1.05);
+                            transform: translateY(-5px);
                         }
                     }
                     .word-btn {
@@ -80,6 +81,85 @@
                     // .active-btn {
                     //     pointer-events: initial;
                     // }
+                }
+                .word-item1 {
+                    &:nth-child(1){
+                        background-color: $yellow-2;
+                    }
+                    &:nth-child(2) {
+                        background-color: $yellow-1;
+                    }
+                    &:nth-child(3) {
+                        background-color: $yellow;
+                    }
+                    &:nth-child(4) {
+                        background-color: $yellow1;
+                    }
+                    &:nth-child(5) {
+                        background-color: $yellow2;
+                    }
+                }
+                .word-item2 {
+                    &:nth-child(1){
+                        background-color: $green-2;
+                    }
+                    &:nth-child(2) {
+                        background-color: $green-1;
+                    }
+                    &:nth-child(3) {
+                        background-color: $green;
+                    }
+                    &:nth-child(4) {
+                        background-color: $green1;
+                    }
+                    &:nth-child(5) {
+                        background-color: $green2;
+                    }
+                }
+                .word-item3 {
+                    &:nth-child(1){
+                        background-color: $blue-2;
+                    }
+                    &:nth-child(2) {
+                        background-color: $blue-1;
+                    }
+                    &:nth-child(3) {
+                        background-color: $blue;
+                    }
+                    &:nth-child(4) {
+                        background-color: $blue1;
+                    }
+                    &:nth-child(5) {
+                        background-color: $blue2;
+                    }
+                }
+                .word-item4 {
+                    &:nth-child(1){
+                        background-color: $violet-2;
+                    }
+                    &:nth-child(2) {
+                        background-color: $violet-1;
+                    }
+                    &:nth-child(3) {
+                        background-color: $violet;
+                    }
+                    &:nth-child(4) {
+                        background-color: $violet1;
+                    }
+                    &:nth-child(5) {
+                        background-color: $violet2;
+                    }
+                }
+                .word-item5 {
+                    &:nth-child(1){
+                        background-color: $red-1;
+                    }
+                    &:nth-child(2) {
+                        background-color: $red;
+                    }
+                    &:nth-child(3) {
+                        background-color: $red1;
+                    }
                 }
             }
         }
@@ -98,7 +178,7 @@
         outline: none;
         i {
             color: $green;
-            transition: all 0.3s ease;
+            transition: $ease;
         }
         &:hover{
             i {
