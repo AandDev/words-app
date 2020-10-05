@@ -27,7 +27,15 @@ const consonantesSample = [
     ['ta', 'te', 'ti', 'to', 'tu'],
     ['sa', 'se', 'si', 'so', 'su']
 ];
-
+/*
+const consonantesSounds1 = [  // Corregir array repetido
+    ['ma', 'me', 'mi', 'mo', 'mu'],
+    ['pa', 'pe', 'pi', 'po', 'pu'],
+    ['la', 'le', 'li', 'lo', 'lu'],
+    ['ta', 'te', 'ti', 'to', 'tu'],
+    ['sa', 'se', 'si', 'so', 'su']
+];
+*/
 const consonantesSounds1 = [
     ['mama', 'mesa', 'martes', 'mama', 'mama'],
     ['papa', 'pala', 'pato', 'pato', 'pato'],
