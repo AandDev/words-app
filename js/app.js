@@ -98,7 +98,8 @@ const createSquare = (container, color) => {
     square.style.left = Math.random() * innerWidth + 'px';
     square.style.backgroundColor = randomColor;
 
-    container.appendChild(square);
+    //container.appendChild(square);
+    container.prepend(square);
 
     setTimeout( () => {
         square.remove();
