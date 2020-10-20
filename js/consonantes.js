@@ -1,4 +1,4 @@
-import {createExamples, colors, sounds} from './app.js'; 
+import {createExamples, createSquare, colors, sounds} from './app.js'; 
 import {consonantesSample, consonantesSample2, consonantesSample3, consonantesSample4, consonantesSample5, colors1, colors2, colors3, colors4, colors5, consonantesSounds1} from './sampleWords.js'; 
 
 
@@ -77,3 +77,9 @@ const prevSlide = () => {
 
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
+
+
+// ==========  Background  ==========  //
+const consonantesBg = document.querySelector('.consonantes');
+
+setInterval(() => {createSquare(consonantesBg, colors[1])}, 800);

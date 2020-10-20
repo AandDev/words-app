@@ -2,9 +2,7 @@ import {colors1, vocalesSample, vocalesSounds} from './sampleWords.js'
 
 const wordsBtn = document.querySelectorAll('.word-btn');
 const sounds = document.querySelectorAll('.sound');
-const homeBg = document.querySelector('.home');
 const vocalesBg = document.querySelector('.vocales');
-const consonantesBg = document.querySelector('.consonantes');
 
 const colors = ['#FFD600', '#2bdd52', '#2EADF4', '#CD2EF4', '#F42E2E'];
 
@@ -98,7 +96,6 @@ const createSquare = (container, color) => {
     square.style.left = Math.random() * innerWidth + 'px';
     square.style.backgroundColor = randomColor;
 
-    //container.appendChild(square);
     container.prepend(square);
 
     setTimeout( () => {
@@ -106,10 +103,9 @@ const createSquare = (container, color) => {
     }, 5000);
 };
 
-setInterval(() => {createSquare(homeBg, colors)}, 800);
+
 setInterval(() => {createSquare(vocalesBg, colors[2])}, 800);
-setInterval(() => {createSquare(consonantesBg, colors[1])}, 800);
 
 
 
-export {createExamples, colors, sounds};
+export {createExamples, createSquare, colors, sounds};
